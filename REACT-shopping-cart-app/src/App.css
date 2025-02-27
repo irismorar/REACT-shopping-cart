@@ -1,0 +1,94 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #ae691a;
+  color: antiquewhite;
+  user-select: none;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.add_remove_button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: .4em 1.4em;
+  margin: 3rem;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #4e5b6d;
+  color: #aaa;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+ul {
+  width: 20rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.list_item_title_price_container{
+  border: 2px solid black;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid #555;
+  padding: .4em 1.4em;
+  margin-top: 1rem;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #7588a3;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  opacity: .75;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+hr {
+  width: 100%;
+  opacity: .3;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
